@@ -47,9 +47,9 @@ const classify = (region: string, page: number): string =>
 // containsMore = whether the list URL supports ?page=N (unverified for /list/new)
 const SECTIONS: { id: string; title: string; url: (page: number) => string; containsMore: boolean }[] = [
     { id: 'new', title: '最新上架', url: () => `${DOMAIN}/list/new`, containsMore: false },
-    { id: 'jp', title: '日本', url: (p) => classify('jp', p), containsMore: true },
-    { id: 'kr', title: '韓國', url: (p) => classify('kr', p), containsMore: true },
-    { id: 'cn', title: '國漫', url: (p) => classify('cn', p), containsMore: true },
+    { id: 'jp', title: '日本', url: (p) => classify('jp', p), containsMore: false },
+    { id: 'kr', title: '韓國', url: (p) => classify('kr', p), containsMore: false },
+    { id: 'cn', title: '國漫', url: (p) => classify('cn', p), containsMore: false },
 ]
 
 export class Baozimh implements SearchResultsProviding, MangaProviding, ChapterProviding, HomePageSectionsProviding {
