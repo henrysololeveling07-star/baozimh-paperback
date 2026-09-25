@@ -488,9 +488,9 @@ const classify = (region, page) => `${BaozimhParser_1.DOMAIN}/classify?type=all&
 // containsMore = whether the list URL supports ?page=N (unverified for /list/new)
 const SECTIONS = [
     { id: 'new', title: '最新上架', url: () => `${BaozimhParser_1.DOMAIN}/list/new`, containsMore: false },
-    { id: 'jp', title: '日本', url: (p) => classify('jp', p), containsMore: true },
-    { id: 'kr', title: '韓國', url: (p) => classify('kr', p), containsMore: true },
-    { id: 'cn', title: '國漫', url: (p) => classify('cn', p), containsMore: true },
+    { id: 'jp', title: '日本', url: (p) => classify('jp', p), containsMore: false },
+    { id: 'kr', title: '韓國', url: (p) => classify('kr', p), containsMore: false },
+    { id: 'cn', title: '國漫', url: (p) => classify('cn', p), containsMore: false },
 ];
 class Baozimh {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
