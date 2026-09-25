@@ -1,0 +1,21 @@
+{
+  "name": "baozimh-paperback",
+  "version": "1.0.0",
+  "repositoryName": "Baozimh Extensions",
+  "description": "Unofficial Baozimh (包子漫畫) source for Paperback 0.8",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npx paperback test",
+    "bundle": "npx paperback bundle",
+    "serve": "npx paperback serve"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@paperback/toolchain": "0.8.0-alpha.47",
+    "@paperback/types": "0.8.0-alpha.47"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.7",
+    "typescript": "^4.3.2"
+  }
+}
